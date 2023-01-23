@@ -1,10 +1,9 @@
-// Create the playable character
+
 const pc = newPlayableCharacter(100, 110)
 
-// Create a non-playable character
 const npc = newNonPlayableCharacter(50, 300)
 
-// have the NPC start walking east immediately
+
 
 async function moveNPC(){
     await npc.walkNorth(1400)
@@ -18,11 +17,10 @@ async function moveNPC(){
 
 moveNPC()
 
-// Create the inventory
+
 const inventory = newInventory()
 move(inventory).to(0, 0)
 
-// Create everything else
 move(newImage('assets/tree.png')).to(200, 450)
 move(newImage('assets/pillar.png')).to(350, 250)
 move(newImage('assets/pine-tree.png')).to(450, 350)
