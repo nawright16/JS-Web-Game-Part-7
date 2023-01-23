@@ -1,10 +1,11 @@
-
+// creating a new playable character
 const pc = newPlayableCharacter(100, 110)
 
+// creating non-playable character
 const npc = newNonPlayableCharacter(50, 300)
 
 
-
+//giving movement instructions to non-playable character
 async function moveNPC(){
     await npc.walkNorth(1400)
     await npc.walkEast(1200)
@@ -17,7 +18,7 @@ async function moveNPC(){
 
 moveNPC()
 
-
+//creating inventory objects
 const inventory = newInventory()
 move(inventory).to(0, 0)
 
